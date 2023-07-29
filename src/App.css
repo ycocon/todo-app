@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Quicksand&family=Raleway&display=swap");
+#title {
+  font-size: 1.75rem;
+}
+#container {
+  background: linear-gradient(180deg, rgb(125, 255, 255), rgb(100, 100, 255));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#to-do-wrapper {
+  background-color: azure;
+  padding: 2rem 2.5rem;
+  border-radius: 0.275rem;
+  width: 500px;
+}
+
+#input-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#input-wrapper input {
+  border: 1px solid black;
+  padding: 0.3rem 0.75rem;
+  display: block;
+  width: 85%;
+  border-radius: 3px;
+}
+
+#input-wrapper button {
+  background-color: rgb(100, 100, 255);
+  display: block;
+  padding: 0 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  border-radius: 3px;
+}
+
+.number {
+  color: rgb(100, 100, 255);
+  font-weight: bold;
+}
+
+.list {
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  box-shadow: 2px 5px 8px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.task-text {
+  width: 75%;
+}
+
+.list-buttons {
+  font-size: 1rem;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-buttons button {
+  padding: 0.4rem 0.75rem;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.list-buttons .remove {
+  background-color: rgb(255, 75, 75);
+  text-align: center;
+}
+
+.list-buttons .update {
+  background-color: rgb(255, 166, 0);
+  text-align: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  :root {
+    font-size: 10px;
+  }
+  #to-do-wrapper {
+    width: 300px;
+  }
+}
